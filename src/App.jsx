@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router";
-import Navbar from "../src/Components/Navbar/Navbar";
+import Navbar from "../src/Components/Navbar";
 import Footer from "../src/Components/Footer/Footer";
 import { lazy } from "react";
 
-const Home = lazy(() => import("../src/Pages/Home"));
-const About = lazy(() => import("../src/Pages/About"));
-const Team = lazy(() => import("../src/Pages/Team"));
+const Home = lazy(() => import("./Pages/Home"));
+const About = lazy(() => import("./Pages/About"));
+const Team = lazy(() => import("./Pages/Team"));
 
 const App = () => {
     return (
